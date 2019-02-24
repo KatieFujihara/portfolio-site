@@ -1,0 +1,256 @@
+@import url('https://fonts.googleapis.com/css?family=Abril+Fatface');
+
+h1 {
+  font-family: 'Abril Fatface', cursive;
+  font-weight: none;
+  color: #FFAA33;
+  size: 3rem;
+  line-height: 1.5;
+  text-align: left;
+  letter-spacing: 5px;
+  margin-left: 10px;
+}
+
+h2 {
+  font-family: helvetica;
+  font-weight: 100;
+  color: rgba(245,243,247,0.65);
+  letter-spacing: 0.03em;
+  -webkit-font-smoothing: antialiased;
+  max-width: 26.1rem;
+  font-size: 1rem;
+  margin-left: 10px;}
+
+  h3 {
+  font-family: helvetica;
+  font-weight: 100;
+  color: #2d2d2d;
+  letter-spacing: 0.03em;
+  -webkit-font-smoothing: antialiased;
+  max-width: 26.1rem;
+  font-size: 1rem;
+  margin-left: 10px;
+  text-align: center;
+  }
+.logo1 {
+  width: 30px;
+  margin: 5px 10px 5px 20px;
+}
+
+.logo2 {
+  width: 30px;
+  margin: 5px;
+}
+.portfolioButton {
+  background: linear-gradient(#ef8b00,#FFAA33);
+  border: none;
+  width: 150px;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 4px 2px;
+  cursor: pointer;
+  box-shadow: 8px 8px 0 rgba(232, 178, 102, 0.2);
+  margin-left: 10px;
+}
+.portfolioButton a {
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.bioButton {
+  background: white;
+  width: 150px;
+  border: none;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 10px 2px;
+  cursor: pointer;
+  box-shadow: 8px 8px 0 rgba(232, 178, 102, 0.2);
+  margin-left: 10px;
+}
+
+.bioButton a {
+  color: #ef8b00;
+}
+
+.githubButton {
+  background: linear-gradient(#ef8b00,#FFAA33);
+  width: 150px;
+  height: 50px;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  margin: 0 auto;
+  cursor: pointer;
+  border-radius: 5px;
+  box-shadow: 8px 8px 0 rgba(232, 178, 102, 0.2);
+}
+
+.githubButton p {
+  color: white;
+}
+.portfolioButton a {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.logos {
+  margin: 0 auto;
+  text-align: center;
+}
+.gatsby {
+  margin: 20px;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  animation: gatsby 1s infinite alternate;
+}
+
+
+
+@keyframes gatsby {
+  from {
+    box-shadow: 0 0 10px -10px #673399;
+  }
+  to {
+    box-shadow: 0 0 10px 10px #bbadc9;
+  }
+}
+
+
+.react {
+  margin: 20px 0px 20px 20px;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  animation: react 1s infinite alternate;
+}
+
+
+
+@keyframes react {
+  from {
+    box-shadow: 0 0 10px -10px #000000;
+  }
+  to {
+    box-shadow: 0 0 10px 10px #61DBFB;
+  }
+}
+
+.css {
+  margin: 20px;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  animation: css 1s infinite alternate;
+}
+
+
+
+@keyframes css {
+  from {
+    box-shadow: 0 0 10px -10px #389AD6;
+  }
+  to {
+    box-shadow: 0 0 10px 10px #9bb9cc;
+  }
+}
+
+.html {
+  margin: 20px;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  animation: html 1s infinite alternate;
+}
+
+
+
+@keyframes html {
+  from {
+    box-shadow: 0 0 10px -10px #E44D25;
+  }
+  to {
+    box-shadow: 0 0 10px 10px #f4d1c8;
+  }
+}
+
+.figma {
+  margin: 20px;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  animation: figma 1s infinite alternate;
+}
+
+
+
+@keyframes figma {
+  from {
+    box-shadow: 0 0 10px -10px #000000;
+  }
+  to {
+    box-shadow: 0 0 10px 10px #E44D25;
+  }
+}
+
+.sketch {
+  margin: 20px;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  animation: sketch 1s infinite alternate;
+}
+
+
+
+@keyframes sketch {
+  from {
+    box-shadow: 0 0 10px -10px #EA6B00; 
+  }
+  to {
+    box-shadow: 0 0 10px 10px #FEB300;
+  }
+}
+
+.invision {
+  margin: 20px;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  animation: invision 1s infinite alternate;
+}
+
+
+
+@keyframes invision {
+  from {
+    box-shadow: 0 0 10px -10px #fca4ba; 
+  }
+  to {
+    box-shadow: 0 0 10px 10px #FF3366;
+  }
+}
+.web {
+  margin: 20px;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  animation: web 1s infinite alternate;
+}
+
+
+
+@keyframes web {
+  from {
+    box-shadow: 0 0 10px -10px #389AD6; 
+  }
+  to {
+    box-shadow: 0 0 10px 10px #4453FF;
+  }
+}

@@ -29,7 +29,7 @@ export const globalStyles = css`
       font-size: 30px;
     }
     h2 {
-      font-size: 24px;
+      font-size: 18px;
     }
   }
   hr {
@@ -148,19 +148,17 @@ export default ({
             <html lang="en" />
             <noscript>This site runs best with JavaScript enabled.</noscript>
           </Helmet>
-          <Header
+          {/* <Header
             siteTitle={site.siteMetadata.title}
             dark={dark}
             bgColor={headerBg}
             headerColor={headerColor}
-          />
+          /> */}
           <MDXProvider components={mdxComponents}>
             <Fragment>{children}</Fragment>
           </MDXProvider>
           {!noFooter && (
             <Footer
-              author={site.siteMetadata.author.name}
-              noSubscribeForm={noSubscribeForm}
             />
           )}
         </div>

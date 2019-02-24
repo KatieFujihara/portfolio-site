@@ -21,10 +21,10 @@ const typography = new Typography({
 
   overrideStyles: ({ rhythm }) => ({
     h1: {
-      color: 'hsla(0,0%,0%,0.75)',
+      color: '#1A3A5D',
     },
     h2: {
-      color: 'hsla(0,0%,0%,0.775)',
+      color: '#F794B8',
     },
     h3: {
       color: 'hsla(0,0%,0%,0.8)',

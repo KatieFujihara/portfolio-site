@@ -1,13 +1,15 @@
-import React from 'react'
+// import React from 'react'
 import { Link } from 'gatsby'
 import { css } from '@emotion/core'
 import theme from '../../config/theme'
 
 import Container from './Container'
 
+import React from 'react'
+
 const Header = ({
   dark,
-  bgColor = 'none',
+  bgColor = '#F794B8',
   siteTitle,
   headerColor = 'black',
 }) => (
@@ -15,9 +17,9 @@ const Header = ({
     css={css`
       width: 100%;
       flex-shrink: 0;
-      background: none;
-      padding: 30px 0 0 0;
-      background: ${dark ? '#090909' : `${bgColor}` || 'none'};
+      background: #F794B8;
+      padding: 7px 0 0 0;
+      border-bottom: 2px solid #ffffff;
     `}
   >
     <Container noVerticalPadding>
@@ -77,12 +79,12 @@ const Header = ({
 
 export default Header
 
-export const pageQuery = graphql`
-  query {
-    site {
-      siteMetadata {
-        title
-      }
-    }
-  }
-`
+// export const pageQuery = graphql`
+//   query {
+//     site {
+//       siteMetadata {
+//         title
+//       }
+//     }
+//   }
+// `

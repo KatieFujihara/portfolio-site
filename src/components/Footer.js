@@ -4,7 +4,7 @@ import { bpMaxSM } from '../lib/breakpoints'
 import SubscribeForm from './Forms/Subscribe'
 import { Twitter, GitHub } from './Social'
 import Container from './Container'
-
+import styles from '../styles/footer.css'
 const Footer = ({ author, noSubscribeForm }) => (
   <footer>
     <Container
@@ -15,14 +15,7 @@ const Footer = ({ author, noSubscribeForm }) => (
         }
       `}
     >
-      {!noSubscribeForm && (
-        <div>
-          <SubscribeForm />
-          <br />
-          <br />
-        </div>
-      )}
-      <div
+      <span
         css={css`
           display: flex;
           align-items: center;
@@ -33,15 +26,40 @@ const Footer = ({ author, noSubscribeForm }) => (
           css={css`
             font-size: 90%;
             opacity: 0.7;
+            line-height:0;
           `}
         >
-          {author && `${author} \u00A9 ${new Date().getFullYear()}`}
+        <h5>Personal</h5>
+        <p>Why Katie?</p>
+        <p>Blog</p>
+        <p>Projects</p>
         </div>
-        <div>
-          <Twitter />
-          <GitHub />
+        <div
+          css={css`
+            font-size: 90%;
+            opacity: 0.7;
+            line-height:0;
+          `}
+        >
+        <h5>Community</h5>
+        <p>OSS Contributions</p>
+        <p>Future Leaders in Tech</p>
+        <p>Speaking Engagements</p>
         </div>
-      </div>
+        <div
+          css={css`
+            font-size: 90%;
+            opacity: 0.7;
+            line-height:0;
+          `}
+        >
+          <h5>Connect</h5>
+          <a href='mailto:katiefujihara.com'><p>Email</p></a>
+          <p>Twitter</p>
+          <p>GitHub</p>
+
+        </div>
+      </span>
     </Container>
   </footer>
 )
