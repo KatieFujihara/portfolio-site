@@ -6,7 +6,7 @@ module.exports = {
   siteUrl: 'https://katiefujihara.com', // Domain of your site. No trailing slash!
   siteLanguage: 'en', // Language Tag on <html> element
   siteLogo: 'images/logo.png', // Used for SEO and manifest, path to your image you placed in the 'static' folder
-  siteDescription: 'This is where they post things!',
+  siteDescription: 'UX Engineer in Portland, OR',
   author: 'Author', // Author for schemaORGJSONLD
   organization: 'Katie Fujihara',
 
