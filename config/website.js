@@ -3,7 +3,7 @@ module.exports = {
   siteTitle: 'Katie Fujihara', // Navigation and Site Title
   siteTitleAlt: 'Katie Fujihara Website', // Alternative Site title for SEO
   siteTitleShort: 'Katie Fujihara', // short_name for manifest
-  siteUrl: 'https://katiefujihara.com', // Domain of your site. No trailing slash!
+  siteUrl: 'https://www.katiefujihara.com', // Domain of your site. No trailing slash!
   siteLanguage: 'en', // Language Tag on <html> element
   siteLogo: 'images/logo.png', // Used for SEO and manifest, path to your image you placed in the 'static' folder
   siteDescription:
