@@ -305,6 +305,7 @@ export default function Index({ data: { site, allMdx } }) {
               background-attachment: fixed;
               background-size: cover;
               padding: 20px;
+              border-radius: 5px;
             `}
           >
             <Link

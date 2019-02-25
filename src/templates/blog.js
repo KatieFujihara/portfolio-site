@@ -38,6 +38,7 @@ const Blog = ({
           background-size: cover;
           color: #2d2d2d;
           padding-bottom: 50px;
+          border-radius: 5px;
         `}
       >
         <Container
@@ -48,7 +49,7 @@ const Blog = ({
             }
             h2 {
               a {
-                font-family: 'Abril Fatface', cursive;
+                font-family: helvetica;
                 font-weight: none;
                 color: #750500;
                 font-size: 2rem;
@@ -63,7 +64,7 @@ const Blog = ({
             css={css`
               text-align: center;
               color: #750500;
-              font-family: 'Abril Fatface', cursive;
+              font-family: helvetica;
             `}
           >
             All Posts
@@ -87,6 +88,8 @@ const Blog = ({
                 .gatsby-image-wrapper {
                 }
                 background: white;
+                border-radius: 5px;
+
                 padding: 40px;
                 ${bpMaxSM} {
                   padding: 20px;
