@@ -2,7 +2,7 @@
 import { Link } from 'gatsby'
 import { css } from '@emotion/core'
 import theme from '../../config/theme'
-
+import { home } from './images/home.svg'
 import Container from './Container'
 
 import React from 'react'
@@ -11,15 +11,15 @@ const Header = ({
   dark,
   bgColor = '#F794B8',
   siteTitle,
-  headerColor = 'black',
+  headerColor = 'white',
 }) => (
   <header
     css={css`
       width: 100%;
       flex-shrink: 0;
-      background: #F794B8;
+      background-color: #300402;
       padding: 7px 0 0 0;
-      border-bottom: 2px solid #ffffff;
+      color: white;
     `}
   >
     <Container noVerticalPadding>
@@ -29,21 +29,35 @@ const Header = ({
           display: flex;
           justify-content: space-between;
           align-items: center;
-          color: ${headerColor};
           a {
             color: ${headerColor ? headerColor : theme.colors.body_color};
           }
           a:hover {
-            color: ${headerColor === theme.colors.white
-              ? 'white'
-              : theme.colors.link_color_hover};
+            color: #ffaa33;
           }
         `}
       >
         <Link to="/" aria-label="go to homepage" activeClassName="active">
-          {siteTitle}
+          Home
         </Link>
-        <div
+        <Link
+          to="/projects"
+          activeClassName="active"
+          aria-label="View blog page"
+        >
+          Portfolio
+        </Link>
+        <Link to="/blog" activeClassName="active" aria-label="View blog page">
+          Blog
+        </Link>
+        <Link
+          to="/pdxflit"
+          activeClassName="active"
+          aria-label="View blog page"
+        >
+          Community
+        </Link>
+        {/* <div
           css={css`
             font-size: 16px;
             line-height: 1.25;
@@ -62,7 +76,7 @@ const Header = ({
             }
           `}
         >
-          {/*
+          
           <Link
             to="/blog"
             activeClassName="active"
@@ -70,8 +84,8 @@ const Header = ({
           >
             Blog
           </Link>
-          */}
-        </div>
+         
+        </div> */}
       </nav>
     </Container>
   </header>

@@ -42,6 +42,12 @@ module.exports = {
       },
     },
     {
+      resolve: `@debiki/gatsby-plugin-talkyard`,
+      options: {
+        talkyardServerUrl: 'https://comments-for-www-katiefujihara-com.talkyard.net '
+      }
+    },
+    {
       resolve: `gatsby-mdx`,
       options: {
         extensions: ['.mdx', '.md', '.markdown'],

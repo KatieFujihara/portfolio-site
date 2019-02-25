@@ -28,25 +28,40 @@ const Hero = () => (
         flex-direction: column;
       `}
     >
-      <h1>
-        Katie Fujihara 
-      </h1>
+      <h1>Katie Fujihara</h1>
       <h2>
-        A UX Engineer based in Portland, OR who creates compelling websites with a beautiful UI. 
-        Unironically likes kombucha and cold brew.
-        Hates ping-pong and Rocket League.
+        A UX Engineer based in Portland, OR who creates compelling websites with
+        a beautiful UI. Unironically likes kombucha and cold brew. Hates
+        ping-pong and Rocket League.
       </h2>
-      <button className='portfolioButton'><a href=''>Projects →</a></button>
-      <button className='bioButton'><a href=''>Blog →</a></button>
-      <div css={css`
-      display: inline;
-      `}
+      <Link
+        to="/projects"
+        aria-label="Visit Portfolio"
+        className="portfolioButton"
       >
-        <img src={require('../components/images/github.png')} className='logo1'
+        Portfolio →
+      </Link>
+      <Link to="/blog" aria-label="Visit Blog" className="blogButton">
+        Blog →
+      </Link>
+      {/* <div
+        css={css`
+          display: inline;
+        `}
+      >
+        <img
+          src={require('../components/images/github.png')}
+          className="logo1"
         />
-          <img src={require('../components/images/twitter.png')} className='logo2'
+        <img
+          src={require('../components/images/twitter.png')}
+          className="logo2"
         />
-      </div>
+        <img
+          src={require('../components/images/linkedin.png')}
+          className="logo3"
+        />
+      </div> */}
     </Container>
     <img
       src={require('../components/images/me.svg')}
@@ -58,87 +73,172 @@ const Hero = () => (
 )
 
 const Content = () => (
-  <section css={css`
-    height: 100%;
-    width: 100%;
-    display: flex;
-  `}
->
-    <Container css={css`
-    display:flex;
-    flex-direction:column;
-      display:block;
-      width: 500px;
-      margin-top: -100px;
-      margin-right: auto;`}>
-      <h1 css={css`
-      text-align: center;`}>Who is Katie?</h1>
-      <h3>A UX Engineer who loves the intersection of beautiful/accessible product design, and front-end developing. She is seeking a new opportunity in Portland, OR or remote!
+  <section
+    css={css`
+      height: 100%;
+      width: 100%;
+      display: flex;
+    `}
+  >
+    <Container
+      css={css`
+        display: flex;
+        flex-direction: column;
+        display: block;
+        width: 500px;
+        margin-top: -100px;
+        margin-right: auto;
+      `}
+    >
+      <h1
+        css={css`
+          text-align: center;
+        `}
+      >
+        Who is Katie?
+      </h1>
+      <h3>
+        A UX Engineer who loves to create at the intersection of
+        beautiful/accessible product design, and front-end development. I am
+        currently seeking a new opportunity in Portland or remote!
       </h3>
-      <h3>She is currently contributing to various open source projects including Gatsby and ifme. She contributes creating Gatsby themes, writing blog posts, and designing styleguides.</h3>
-      <h3>When she isn't designing or coding, she is running a social organization known as Portland Future Leaders in Tech. This organization was founded in March 2018 by Katie and her code school classmate. The organization has grown to over 300 members and provides talks, workshops, hackathons, and happy hours to the local community of budding techies</h3>
+      <h3>
+        I am currently contributing to various open source projects including
+        Gatsby and if-me. She contributes by creating Gatsby themes, writing
+        blog posts, and designing styleguides.
+      </h3>
+      <h3>
+        When she isn't designing or coding, she is running a social organization
+        known as Portland Future Leaders in Tech. The organization has grown to
+        over 300 members and provides talks, workshops, hackathons, and happy
+        hours to the local community of budding techies.
+      </h3>
+      <Link to="/about" aria-label="Visit About" className="githubButton">
+        Learn More
+      </Link>
     </Container>
-  </section>    
+  </section>
 )
-const Tools = ()=> ( 
-  <section css={css`
-    height: 100%;
-    width: 100%;
-    display: flex;
-    background-color:#ffe0eb;
-  `}
->
-<Container css={css`
-    display:flex;
-    flex-direction:column;`}>
-      <div className='logos'>
-          <h1 css={css`
-          text-align: center;`}>
-          Developer Tools</h1>
-          <h3>While Katie has dabbled in different languages including Angular 2 and Ruby/Rails, her favorite languages to work with are HTML, CSS, and React. She loves using Gatsby to build blogs and themes. She is comfortable with Git and navigating in the terminal.</h3>
-            <img
-          src={require('../components/images/html.png')}
-          className='html'
-        />
-          <img
-          src={require('../components/images/css.png')}
-          className='css'
-        />
-          <img
+const Tools = () => (
+  <section
+    css={css`
+      height: 100%;
+      width: 100%;
+      display: flex;
+      background-color: #ffe0eb;
+    `}
+  >
+    <Container
+      css={css`
+        display: flex;
+        flex-direction: column;
+      `}
+    >
+      <div className="logos">
+        <h1
+          css={css`
+            text-align: center;
+          `}
+        >
+          Developer Tools
+        </h1>
+        <h3>
+          While Katie has dabbled in different languages including Angular 2 and
+          Ruby/Rails, her favorite languages to work with are HTML, CSS, and
+          React. She loves using Gatsby to build blogs and themes. She is
+          comfortable with Git and navigating in the terminal.
+        </h3>
+        <img src={require('../components/images/html.png')} className="html" />
+        <img src={require('../components/images/css.png')} className="css" />
+        <img
           src={require('../components/images/gatsby.png')}
-          className='gatsby'
+          className="gatsby"
         />
         <img
           src={require('../components/images/react2.png')}
-          className='react'
+          className="react"
         />
-        <a href='' className='githubButton'>
-          <p css={css`
-          padding-bottom:0;
-          margin-bottom:10px;`}>See Code</p> 
+        <a
+          href="https://github.com/katieofcode"
+          aria-label="Visit blog page"
+          className="githubButton"
+        >
+          Peep Code
         </a>
-         <hr></hr>
-          <h1 css={css`
-          text-align: center;`}>
-          Designer Tools</h1>
-          <h3>Katie has experience prototyping on Figma and Sketch. She uses Webflow to design dynamic websites for her clients, and InVision when there needs to be collaboration with other designers.</h3>
-          <img
+        <hr />
+        <h1
+          css={css`
+            text-align: center;
+          `}
+        >
+          Designer Tools
+        </h1>
+        <h3>
+          Katie has experience prototyping on Figma and Sketch. She uses Webflow
+          to design dynamic websites for her clients, and InVision when there
+          needs to be collaboration with other designers.
+        </h3>
+        <img
           src={require('../components/images/webflow.jpg')}
-          className='web'
+          className="web"
         />
-            <img
+        <img
           src={require('../components/images/figma.jpg')}
-          className='figma'
+          className="figma"
         />
-          <img
+        <img
           src={require('../components/images/sketch.jpg')}
-          className='sketch'
+          className="sketch"
         />
-          <img
+        <img
           src={require('../components/images/invision.png')}
-          className='invision'
+          className="invision"
         />
-        </div>
+      </div>
+      <Link to="/blog" aria-label="Visit blog page" className="githubButton">
+        Process
+      </Link>
+    </Container>
+  </section>
+)
+
+const Contact = () => (
+  <section
+    css={css`
+      height: 100%;
+      width: 100%;
+      display: flex;
+      background-color: #fff3e2;
+    `}
+  >
+    <Container
+      css={css`
+        display: flex;
+        flex-direction: column;
+      `}
+    >
+      <h1
+        css={css`
+          text-align: center;
+        `}
+      >
+        Let's Chat!
+      </h1>
+      <p
+        css={css`
+          text-align: center;
+        `}
+      >
+        Passionate about making tech a more diverse and inclusive place?
+        <br /> Let's grab a (virtual) coffee!
+      </p>
+      <a
+        href="mailto:katiefujihara@gmail.com"
+        aria-label="contact"
+        className="contactButton"
+      >
+        Contact
+      </a>
     </Container>
   </section>
 )
@@ -165,15 +265,16 @@ export default function Index({ data: { site, allMdx } }) {
       headerBg={theme.brand.primary}
     >
       <Hero />
-      <Content/>
-      <Tools/>
+      <Content />
+      <Tools />
+      <Contact />
       <Container
         css={css`
           padding-bottom: 0;
-         `}
+        `}
       >
-     <h1>Recent Posts</h1>
- {allMdx.edges.map(({ node: post }) => (
+        <h1>Recent Posts</h1>
+        {allMdx.edges.map(({ node: post }) => (
           <div
             key={post.id}
             css={css`
@@ -182,13 +283,17 @@ export default function Index({ data: { site, allMdx } }) {
           >
             <Link
               to={post.frontmatter.slug}
-              aria-label={`View ${post.frontmatter.title}`
-            }
+              aria-label={`View ${post.frontmatter.title}`}
             >
-              <PostTitle css={css`
-              color: #750500;
-              text-align: left;
-              font-family: helvetica`}>{post.frontmatter.title}</PostTitle>
+              <PostTitle
+                css={css`
+                  color: #750500;
+                  text-align: left;
+                  font-family: helvetica;
+                `}
+              >
+                {post.frontmatter.title}
+              </PostTitle>
             </Link>
             <Description>
               {post.excerpt}{' '}
@@ -202,15 +307,11 @@ export default function Index({ data: { site, allMdx } }) {
             <span />
           </div>
         ))}
-        <Link
-          to="/blog"
-          aria-label="Visit blog page"
-          className="button-secondary"
-        >
-          View all articles
+        <Link to="/blog" aria-label="Visit blog page" className="githubButton">
+          View All
         </Link>
       </Container>
-      <hr></hr>
+      <hr />
     </Layout>
   )
 }

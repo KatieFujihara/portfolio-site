@@ -17,7 +17,6 @@ const colors = {
   gray: '#D3D3D3',
   black: '#000',
   white: '#fff',
-  bg_color: '#fafafa',
   body_color: 'rgba(0,0,0,0.85)',
   link_color: brand.primary,
   link_color_hover: `${darken(0.07, brand.primary)}`,

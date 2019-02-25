@@ -22,42 +22,41 @@ const Footer = ({ author, noSubscribeForm }) => (
           justify-content: space-between;
         `}
       >
-        <div
-          css={css`
-            font-size: 90%;
-            opacity: 0.7;
-            line-height:0;
-          `}
-        >
-        <h5>Personal</h5>
-        <p>Why Katie?</p>
-        <p>Blog</p>
-        <p>Projects</p>
+        <div className="footer">
+          <h5>Personal</h5>
+          <a href="/about">
+            <p>About</p>
+          </a>
+          <a href="/blog">
+            <p>Blog</p>
+          </a>
+          <a href="/blog">
+            <p>Portfolio</p>
+          </a>
         </div>
-        <div
-          css={css`
-            font-size: 90%;
-            opacity: 0.7;
-            line-height:0;
-          `}
-        >
-        <h5>Community</h5>
-        <p>OSS Contributions</p>
-        <p>Future Leaders in Tech</p>
-        <p>Speaking Engagements</p>
+        <div className="footer">
+          <h5>Community</h5>
+          <a href="/contributions">
+            <p>OSS Contributions</p>
+          </a>
+          <a href="/pdxflit">
+            <p>Future Leaders in Tech</p>
+          </a>
+          <a href="/involvement">
+            <p>Community Involvement</p>
+          </a>
         </div>
-        <div
-          css={css`
-            font-size: 90%;
-            opacity: 0.7;
-            line-height:0;
-          `}
-        >
+        <div className="footer">
           <h5>Connect</h5>
-          <a href='mailto:katiefujihara.com'><p>Email</p></a>
-          <p>Twitter</p>
-          <p>GitHub</p>
-
+          <a href="mailto:katiefujihara.com">
+            <p>Email</p>
+          </a>
+          <a href="https://www.twitter.com/katieofcode">
+            <p>Twitter</p>
+          </a>
+          <a href="https://www.github.com/katieofcode">
+            <p>GitHub</p>
+          </a>
         </div>
       </span>
     </Container>

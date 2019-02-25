@@ -8,21 +8,15 @@ module.exports = {
   siteLogo: 'images/logo.png', // Used for SEO and manifest, path to your image you placed in the 'static' folder
   siteDescription: 'This is where they post things!',
   author: 'Author', // Author for schemaORGJSONLD
-  organization: 'egghead.io LLC',
-
-  // siteFBAppID: '123456789', // Facebook App ID - Optional
-  userTwitter: '@eggheadio', // Twitter Username
-  ogSiteName: 'egghead.io Gatsby Starter Blog', // Facebook Site Name
-  ogLanguage: 'en_US',
-  googleAnalyticsID: '',
+  organization: 'Katie Fujihara',
 
   // Manifest and Progress color
   themeColor: '#5348FF',
   backgroundColor: '#2b2e3c',
 
   // Social component
-  twitter: 'https://twitter.com/eggheadio/',
-  twitterHandle: '@eggheadio',
-  github: 'https://github.com/eggheadio/',
+  twitter: 'https://twitter.com/katieofcode/',
+  twitterHandle: '@katieofcode',
+  github: 'https://github.com/katieofcode/',
   linkedin: '',
 }

@@ -3,7 +3,7 @@
 h1 {
   font-family: 'Abril Fatface', cursive;
   font-weight: none;
-  color: #FFAA33;
+  color: #ffaa33;
   size: 3rem;
   line-height: 1.5;
   text-align: left;
@@ -14,14 +14,15 @@ h1 {
 h2 {
   font-family: helvetica;
   font-weight: 100;
-  color: rgba(245,243,247,0.65);
+  color: rgba(245, 243, 247, 0.65);
   letter-spacing: 0.03em;
   -webkit-font-smoothing: antialiased;
   max-width: 26.1rem;
   font-size: 1rem;
-  margin-left: 10px;}
+  margin-left: 10px;
+}
 
-  h3 {
+h3 {
   font-family: helvetica;
   font-weight: 100;
   color: #2d2d2d;
@@ -31,35 +32,30 @@ h2 {
   font-size: 1rem;
   margin-left: 10px;
   text-align: center;
-  }
-.logo1 {
-  width: 30px;
-  margin: 5px 10px 5px 20px;
 }
 
-.logo2 {
-  width: 30px;
-  margin: 5px;
-}
 .portfolioButton {
-  background: linear-gradient(#ef8b00,#FFAA33);
-  border: none;
+  background: linear-gradient(#ef8b00, #ffaa33);
   width: 150px;
+  border: none;
   padding: 10px 20px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  margin: 4px 2px;
+  margin: 10px 2px;
   cursor: pointer;
   box-shadow: 8px 8px 0 rgba(232, 178, 102, 0.2);
   margin-left: 10px;
-}
-.portfolioButton a {
   color: white;
-  font-family: Arial, Helvetica, sans-serif;
+  border-radius: 5px;
 }
 
-.bioButton {
+.portfolioButton:hover {
+  color: white;
+  background: #fca4ba;
+}
+
+.blogButton {
   background: white;
   width: 150px;
   border: none;
@@ -71,17 +67,21 @@ h2 {
   cursor: pointer;
   box-shadow: 8px 8px 0 rgba(232, 178, 102, 0.2);
   margin-left: 10px;
+  color: #ef8b00;
+  border-radius: 5px;
 }
 
-.bioButton a {
-  color: #ef8b00;
+.blogButton:hover {
+  color: white;
+  background: #fca4ba;
 }
 
 .githubButton {
-  background: linear-gradient(#ef8b00,#FFAA33);
+  background: linear-gradient(#ef8b00, #ffaa33);
   width: 150px;
-  height: 50px;
-  padding: 10px 20px;
+  height: auto;
+  padding: 10px;
+  color: white;
   text-align: center;
   text-decoration: none;
   display: block;
@@ -91,13 +91,30 @@ h2 {
   box-shadow: 8px 8px 0 rgba(232, 178, 102, 0.2);
 }
 
-.githubButton p {
+.githubButton:hover {
+  background: #fca4ba;
   color: white;
 }
-.portfolioButton a {
-  font-family: Arial, Helvetica, sans-serif;
+
+.contactButton {
+  background: linear-gradient(#213a5a, #3b5575);
+  color: white;
+  width: 150px;
+  height: auto;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  margin: 0 auto;
+  cursor: pointer;
+  border-radius: 5px;
+  box-shadow: 8px 8px 0 rgba(232, 178, 102, 0.2);
 }
 
+.contactButton:hover {
+  color: white;
+  background: #fca4ba;
+}
 
 .logos {
   margin: 0 auto;
@@ -111,8 +128,6 @@ h2 {
   animation: gatsby 1s infinite alternate;
 }
 
-
-
 @keyframes gatsby {
   from {
     box-shadow: 0 0 10px -10px #673399;
@@ -122,7 +137,6 @@ h2 {
   }
 }
 
-
 .react {
   margin: 20px 0px 20px 20px;
   border-radius: 50%;
@@ -131,14 +145,12 @@ h2 {
   animation: react 1s infinite alternate;
 }
 
-
-
 @keyframes react {
   from {
     box-shadow: 0 0 10px -10px #000000;
   }
   to {
-    box-shadow: 0 0 10px 10px #61DBFB;
+    box-shadow: 0 0 10px 10px #61dbfb;
   }
 }
 
@@ -150,11 +162,9 @@ h2 {
   animation: css 1s infinite alternate;
 }
 
-
-
 @keyframes css {
   from {
-    box-shadow: 0 0 10px -10px #389AD6;
+    box-shadow: 0 0 10px -10px #389ad6;
   }
   to {
     box-shadow: 0 0 10px 10px #9bb9cc;
@@ -169,11 +179,9 @@ h2 {
   animation: html 1s infinite alternate;
 }
 
-
-
 @keyframes html {
   from {
-    box-shadow: 0 0 10px -10px #E44D25;
+    box-shadow: 0 0 10px -10px #e44d25;
   }
   to {
     box-shadow: 0 0 10px 10px #f4d1c8;
@@ -188,14 +196,12 @@ h2 {
   animation: figma 1s infinite alternate;
 }
 
-
-
 @keyframes figma {
   from {
     box-shadow: 0 0 10px -10px #000000;
   }
   to {
-    box-shadow: 0 0 10px 10px #E44D25;
+    box-shadow: 0 0 10px 10px #e44d25;
   }
 }
 
@@ -207,14 +213,12 @@ h2 {
   animation: sketch 1s infinite alternate;
 }
 
-
-
 @keyframes sketch {
   from {
-    box-shadow: 0 0 10px -10px #EA6B00; 
+    box-shadow: 0 0 10px -10px #ea6b00;
   }
   to {
-    box-shadow: 0 0 10px 10px #FEB300;
+    box-shadow: 0 0 10px 10px #feb300;
   }
 }
 
@@ -226,14 +230,12 @@ h2 {
   animation: invision 1s infinite alternate;
 }
 
-
-
 @keyframes invision {
   from {
-    box-shadow: 0 0 10px -10px #fca4ba; 
+    box-shadow: 0 0 10px -10px #fca4ba;
   }
   to {
-    box-shadow: 0 0 10px 10px #FF3366;
+    box-shadow: 0 0 10px 10px #ff3366;
   }
 }
 .web {
@@ -244,13 +246,11 @@ h2 {
   animation: web 1s infinite alternate;
 }
 
-
-
 @keyframes web {
   from {
-    box-shadow: 0 0 10px -10px #389AD6; 
+    box-shadow: 0 0 10px -10px #389ad6;
   }
   to {
-    box-shadow: 0 0 10px 10px #4453FF;
+    box-shadow: 0 0 10px 10px #4453ff;
   }
 }
