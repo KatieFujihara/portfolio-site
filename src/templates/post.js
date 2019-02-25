@@ -41,7 +41,7 @@ export default function Post({
         <Container
           css={css`
             background: white;
-            margin-bottom: 10px;
+            margin: 10px;
             border-radius: 5px;
             h1 {
               color: #ffb3c8;
