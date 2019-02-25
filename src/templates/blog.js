@@ -58,6 +58,13 @@ const Blog = ({
           `}
         >
           <Header />
+          <h1
+            css={css`
+              text-align: center;
+            `}
+          >
+            All Posts
+          </h1>
           {posts.map(({ node: post }) => (
             <div
               key={post.id}

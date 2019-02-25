@@ -104,8 +104,13 @@ export default function Post({
             </div>
           )}
           <br />
-          <MDXRenderer>{mdx.code.body}</MDXRenderer>
-          <TalkyardCommentsIframe />
+          <div
+            css={css`
+              padding: 20px;
+            `}
+          >
+            <MDXRenderer>{mdx.code.body}</MDXRenderer>
+          </div>
         </Container>
         {/* <SubscribeForm /> */}
       </article>

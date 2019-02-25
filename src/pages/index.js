@@ -195,7 +195,11 @@ const Tools = () => (
           className="invision"
         />
       </div>
-      <Link to="/blog" aria-label="Visit blog page" className="githubButton">
+      <Link
+        to="/process"
+        aria-label="Visit Process Page"
+        className="githubButton"
+      >
         Process
       </Link>
     </Container>
