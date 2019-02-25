@@ -43,7 +43,7 @@ const Header = ({
           Home
         </Link>
         <Link
-          to="/projects"
+          to="/portfolio"
           activeClassName="active"
           aria-label="View blog page"
         >
