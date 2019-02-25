@@ -157,10 +157,9 @@ const Tools = () => (
           Developer Tools
         </h1>
         <h3 className="description">
-          While Katie has dabbled in different languages including Angular 2 and
-          Ruby/Rails, her favorite languages to work with are HTML, CSS, and
-          React. She loves using Gatsby to build blogs and themes. She is
-          comfortable with Git and navigating in the terminal.
+          While I have dabbled in different languages including Angular 2 and
+          Ruby/Rails, my favorite languages to work with are CSS and React. I
+          love using Gatsby to build blogs and websites.
         </h3>
         <img src={require('../components/images/html.png')} className="html" />
         <img src={require('../components/images/css.png')} className="css" />
@@ -190,9 +189,10 @@ const Tools = () => (
           Designer Tools
         </h1>
         <h3 className="description">
-          Katie has experience prototyping on Figma and Sketch. She uses Webflow
-          to design dynamic websites for her clients, and InVision when there
-          needs to be collaboration with other designers.
+          I have experience prototyping on Figma and Sketch and have experience
+          using Webflow to design dynamic websites for my clients. I am familiar
+          with using InVision when there needs to be collaboration with other
+          designers.
         </h3>
         <img
           src={require('../components/images/webflow.jpg')}
