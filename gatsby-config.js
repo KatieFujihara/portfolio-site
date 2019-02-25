@@ -34,6 +34,7 @@ module.exports = {
     },
   },
   plugins: [
+    `gatsby-plugin-styled-components`,
     {
       resolve: 'gatsby-source-filesystem',
       options: {
@@ -69,7 +70,6 @@ module.exports = {
     'gatsby-plugin-emotion',
     'gatsby-plugin-catch-links',
     'gatsby-plugin-react-helmet',
-    `gatsby-plugin-styled-components`,
     {
       resolve: 'gatsby-plugin-manifest',
       options: {
