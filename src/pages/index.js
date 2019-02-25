@@ -46,7 +46,7 @@ const Hero = () => (
         League.
       </h2>
       <Link
-        to="/projects"
+        to="/portfolio"
         aria-label="Visit Portfolio"
         className="portfolioButton"
       >
