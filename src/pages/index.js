@@ -102,6 +102,7 @@ const Content = () => (
         width: 500px;
         margin-top: -100px;
         margin-right: auto;
+        margin-bottom: 20px;
       `}
     >
       <h1 className="headerText">Who is Katie?</h1>
