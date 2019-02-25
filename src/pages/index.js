@@ -113,14 +113,14 @@ const Content = () => (
       </h3>
       <h3 className="description">
         I am currently contributing to various open source projects including
-        Gatsby and if-me. She contributes by creating Gatsby themes, writing
-        blog posts, and designing styleguides.
+        Gatsby and if-me. I contribute by writing blog posts and designing
+        styleguides.
       </h3>
       <h3 className="description">
-        When she isn't designing or coding, she is running a social organization
+        When I'm not designing or coding, I am running a social organization
         known as Portland Future Leaders in Tech. The organization has grown to
         over 300 members and provides talks, workshops, hackathons, and happy
-        hours to the local community of budding techies.
+        hour events to the local community of budding techies.
       </h3>
       <Link to="/about" aria-label="Visit About" className="githubButton">
         Learn More
