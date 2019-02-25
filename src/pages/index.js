@@ -288,6 +288,7 @@ export default function Index({ data: { site, allMdx } }) {
       <Content />
       <Tools />
       <Contact />
+      <hr />
       <Container
         css={css`
           padding-bottom: 0;
