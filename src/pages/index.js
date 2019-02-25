@@ -140,6 +140,9 @@ const Tools = () => (
       css={css`
         display: flex;
         flex-direction: column;
+        background: white;
+        margin: 50px auto;
+        border-radius: 50px;
       `}
     >
       <div className="logos">
@@ -311,14 +314,20 @@ export default function Index({ data: { site, allMdx } }) {
               <PostTitle
                 css={css`
                   color: #750500;
-                  text-align: left;
+                  text-align: center;
                   font-family: helvetica;
                 `}
               >
                 {post.frontmatter.title}
               </PostTitle>
             </Link>
-            <Description>
+            <Description
+              css={css`
+                background: white;
+                border-radius: 5px;
+                padding: 5px;
+              `}
+            >
               {post.excerpt} <br />
               <Link
                 to={post.frontmatter.slug}
