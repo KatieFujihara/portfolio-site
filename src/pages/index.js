@@ -286,7 +286,7 @@ export default function Index({ data: { site, allMdx } }) {
               </PostTitle>
             </Link>
             <Description>
-              {post.excerpt}{' '}
+              {post.excerpt} <br />
               <Link
                 to={post.frontmatter.slug}
                 aria-label={`View ${post.frontmatter.title}`}
