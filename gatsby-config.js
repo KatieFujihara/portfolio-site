@@ -42,10 +42,17 @@ module.exports = {
       },
     },
     {
+      resolve: `gatsby-plugin-styled-components`,
+      options: {
+        // Add any options here
+      },
+    },
+    {
       resolve: `@debiki/gatsby-plugin-talkyard`,
       options: {
-        talkyardServerUrl: 'https://comments-for-www-katiefujihara-com.talkyard.net '
-      }
+        talkyardServerUrl:
+          'https://comments-for-www-katiefujihara-com.talkyard.net ',
+      },
     },
     {
       resolve: `gatsby-mdx`,
