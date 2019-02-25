@@ -30,7 +30,7 @@ const Footer = ({ author, noSubscribeForm }) => (
           <a href="/blog">
             <p>Blog</p>
           </a>
-          <a href="/blog">
+          <a href="/portfolio">
             <p>Portfolio</p>
           </a>
         </div>
