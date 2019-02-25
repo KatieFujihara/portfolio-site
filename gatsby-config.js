@@ -42,12 +42,6 @@ module.exports = {
       },
     },
     {
-      resolve: `gatsby-plugin-styled-components`,
-      options: {
-        // Add any options here
-      },
-    },
-    {
       resolve: `@debiki/gatsby-plugin-talkyard`,
       options: {
         talkyardServerUrl:
@@ -75,6 +69,7 @@ module.exports = {
     'gatsby-plugin-emotion',
     'gatsby-plugin-catch-links',
     'gatsby-plugin-react-helmet',
+    `gatsby-plugin-styled-components`,
     {
       resolve: 'gatsby-plugin-manifest',
       options: {
