@@ -31,9 +31,11 @@ const Header = ({
           align-items: center;
           a {
             color: white;
+            padding: 5px;
           }
           a:hover {
             color: #750500;
+            border: 2px solid white;
           }
         `}
       >
