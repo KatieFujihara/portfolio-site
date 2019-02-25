@@ -293,7 +293,7 @@ export default function Index({ data: { site, allMdx } }) {
           padding-bottom: 0;
         `}
       >
-        <h1 className="headerText">Recent Posts</h1>
+        <h1 className="headerText">What's Poppin' on the Blog?</h1>
         {allMdx.edges.map(({ node: post }) => (
           <div
             key={post.id}
