@@ -39,8 +39,11 @@ const Hero = () => (
       </h1>
       <h2 className="secondaryText">
         A UX Engineer based in Portland, OR who creates compelling websites with
-        a beautiful UI. Unironically likes kombucha and cold brew. Hates
-        ping-pong and Rocket League.
+        a beautiful UI.
+        <br />
+        <br />
+        Unironically likes kombucha and cold brew. Hates ping-pong and Rocket
+        League.
       </h2>
       <Link
         to="/projects"
