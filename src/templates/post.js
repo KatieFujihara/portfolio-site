@@ -107,6 +107,10 @@ export default function Post({
           <div
             css={css`
               padding: 20px;
+              h1 {
+                color: #ffaa33;
+              },
+              
             `}
           >
             <MDXRenderer>{mdx.code.body}</MDXRenderer>
