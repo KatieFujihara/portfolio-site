@@ -17,8 +17,8 @@ const Header = ({
     css={css`
       width: 100%;
       flex-shrink: 0;
-      background-color: #300402;
-      padding: 7px 0 0 0;
+      background-color: #ffb3c8;
+      padding: 10px 0 0 0;
       color: white;
     `}
   >
@@ -30,10 +30,10 @@ const Header = ({
           justify-content: space-between;
           align-items: center;
           a {
-            color: ${headerColor ? headerColor : theme.colors.body_color};
+            color: white;
           }
           a:hover {
-            color: #ffaa33;
+            color: #750500;
           }
         `}
       >

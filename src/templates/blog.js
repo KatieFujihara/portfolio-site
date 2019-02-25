@@ -32,10 +32,11 @@ const Blog = ({
         css={css`
           width: 100%;
           display: flex;
-          background-color: #300402;
-          background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 1600 800'%3E%3Cg %3E%3Cpolygon fill='%23420302' points='1600 160 0 460 0 350 1600 50'/%3E%3Cpolygon fill='%23540201' points='1600 260 0 560 0 450 1600 150'/%3E%3Cpolygon fill='%23660201' points='1600 360 0 660 0 550 1600 250'/%3E%3Cpolygon fill='%23780100' points='1600 460 0 760 0 650 1600 350'/%3E%3Cpolygon fill='%238a0000' points='1600 800 0 800 0 750 1600 450'/%3E%3C/g%3E%3C/svg%3E");
+          background-color: #ffb3c8;
+          background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 1600 800'%3E%3Cg %3E%3Cpolygon fill='%23ffbccf' points='1600 160 0 460 0 350 1600 50'/%3E%3Cpolygon fill='%23ffc5d6' points='1600 260 0 560 0 450 1600 150'/%3E%3Cpolygon fill='%23ffcedd' points='1600 360 0 660 0 550 1600 250'/%3E%3Cpolygon fill='%23ffd7e4' points='1600 460 0 760 0 650 1600 350'/%3E%3Cpolygon fill='%23ffe0eb' points='1600 800 0 800 0 750 1600 450'/%3E%3C/g%3E%3C/svg%3E");
           background-attachment: fixed;
           background-size: cover;
+          color: #2d2d2d;
           padding-bottom: 50px;
         `}
       >
@@ -49,7 +50,7 @@ const Blog = ({
               a {
                 font-family: 'Abril Fatface', cursive;
                 font-weight: none;
-                color: #ffaa33;
+                color: #750500;
                 font-size: 2rem;
                 line-height: 1.5;
                 text-align: left;
@@ -61,7 +62,7 @@ const Blog = ({
           <h1
             css={css`
               text-align: center;
-              color: #ffaa33;
+              color: #750500;
               font-family: 'Abril Fatface', cursive;
             `}
           >
@@ -148,7 +149,7 @@ const Blog = ({
                 to={nextPagePath}
                 aria-label="View next page"
                 css={css`
-                  color: white;
+                  color: #750500;
                 `}
               >
                 Next Page →
@@ -159,7 +160,7 @@ const Blog = ({
                 to={previousPagePath}
                 aria-label="View previous page"
                 css={css`
-                  color: white;
+                  color: #750500;
                 `}
               >
                 ← Previous Page
