@@ -61,6 +61,8 @@ const Blog = ({
           <h1
             css={css`
               text-align: center;
+              color: #ffaa33;
+              font-family: 'Abril Fatface', cursive;
             `}
           >
             All Posts
