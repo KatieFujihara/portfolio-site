@@ -26,10 +26,18 @@ const Hero = () => (
       css={css`
         display: flex;
         flex-direction: column;
+        margin-left: 5%;
       `}
     >
-      <h1>Katie Fujihara</h1>
-      <h2>
+      <h1
+        className="headerText"
+        css={css`
+          text-align: left;
+        `}
+      >
+        Katie Fujihara
+      </h1>
+      <h2 className="secondaryText">
         A UX Engineer based in Portland, OR who creates compelling websites with
         a beautiful UI. Unironically likes kombucha and cold brew. Hates
         ping-pong and Rocket League.
@@ -66,7 +74,10 @@ const Hero = () => (
     <img
       src={require('../components/images/me.svg')}
       css={css`
-        width: 70%;
+        width: 67%;
+        z-index: 0;
+        position: relative;
+        margin-right: 40%;
       `}
     />
   </section>
@@ -90,24 +101,18 @@ const Content = () => (
         margin-right: auto;
       `}
     >
-      <h1
-        css={css`
-          text-align: center;
-        `}
-      >
-        Who is Katie?
-      </h1>
-      <h3>
+      <h1 className="headerText">Who is Katie?</h1>
+      <h3 className="description">
         A UX Engineer who loves to create at the intersection of
         beautiful/accessible product design, and front-end development. I am
         currently seeking a new opportunity in Portland or remote!
       </h3>
-      <h3>
+      <h3 className="description">
         I am currently contributing to various open source projects including
         Gatsby and if-me. She contributes by creating Gatsby themes, writing
         blog posts, and designing styleguides.
       </h3>
-      <h3>
+      <h3 className="description">
         When she isn't designing or coding, she is running a social organization
         known as Portland Future Leaders in Tech. The organization has grown to
         over 300 members and provides talks, workshops, hackathons, and happy
@@ -135,14 +140,8 @@ const Tools = () => (
       `}
     >
       <div className="logos">
-        <h1
-          css={css`
-            text-align: center;
-          `}
-        >
-          Developer Tools
-        </h1>
-        <h3>
+        <h1 className="headerText">Developer Tools</h1>
+        <h3 className="description">
           While Katie has dabbled in different languages including Angular 2 and
           Ruby/Rails, her favorite languages to work with are HTML, CSS, and
           React. She loves using Gatsby to build blogs and themes. She is
@@ -166,14 +165,8 @@ const Tools = () => (
           Peep Code
         </a>
         <hr />
-        <h1
-          css={css`
-            text-align: center;
-          `}
-        >
-          Designer Tools
-        </h1>
-        <h3>
+        <h1 className="headerText">Designer Tools</h1>
+        <h3 className="description">
           Katie has experience prototyping on Figma and Sketch. She uses Webflow
           to design dynamic websites for her clients, and InVision when there
           needs to be collaboration with other designers.
@@ -221,21 +214,11 @@ const Contact = () => (
         flex-direction: column;
       `}
     >
-      <h1
-        css={css`
-          text-align: center;
-        `}
-      >
-        Let's Chat!
-      </h1>
-      <p
-        css={css`
-          text-align: center;
-        `}
-      >
+      <h1 className="headerText">Let's Chat!</h1>
+      <h3 className="description">
         Passionate about making tech a more diverse and inclusive place?
         <br /> Let's grab a (virtual) coffee!
-      </p>
+      </h3>
       <a
         href="mailto:katiefujihara@gmail.com"
         aria-label="contact"
@@ -277,7 +260,7 @@ export default function Index({ data: { site, allMdx } }) {
           padding-bottom: 0;
         `}
       >
-        <h1>Recent Posts</h1>
+        <h1 className="headerText">Recent Posts</h1>
         {allMdx.edges.map(({ node: post }) => (
           <div
             key={post.id}
