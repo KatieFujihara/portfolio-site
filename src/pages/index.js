@@ -134,7 +134,10 @@ const Tools = () => (
       height: 100%;
       width: 100%;
       display: flex;
-      background-color: #ffe0eb;
+      background-color: #ffb3c8;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 1600 800'%3E%3Cg %3E%3Cpolygon fill='%23ffbccf' points='1600 160 0 460 0 350 1600 50'/%3E%3Cpolygon fill='%23ffc5d6' points='1600 260 0 560 0 450 1600 150'/%3E%3Cpolygon fill='%23ffcedd' points='1600 360 0 660 0 550 1600 250'/%3E%3Cpolygon fill='%23ffd7e4' points='1600 460 0 760 0 650 1600 350'/%3E%3Cpolygon fill='%23ffe0eb' points='1600 800 0 800 0 750 1600 450'/%3E%3C/g%3E%3C/svg%3E");
+      background-attachment: fixed;
+      background-size: cover;
     `}
   >
     <Container
@@ -144,7 +147,15 @@ const Tools = () => (
       `}
     >
       <div className="logos">
-        <h1 className="headerText">Developer Tools</h1>
+        <h1
+          className="headerText"
+          css={css`
+            color: #213a5a;
+            border: 2px solid white;
+          `}
+        >
+          Developer Tools
+        </h1>
         <h3 className="description">
           While Katie has dabbled in different languages including Angular 2 and
           Ruby/Rails, her favorite languages to work with are HTML, CSS, and
@@ -169,7 +180,15 @@ const Tools = () => (
           Peep Code
         </a>
         <hr />
-        <h1 className="headerText">Designer Tools</h1>
+        <h1
+          className="headerText"
+          css={css`
+            color: #213a5a;
+            border: 2px solid white;
+          `}
+        >
+          Designer Tools
+        </h1>
         <h3 className="description">
           Katie has experience prototyping on Figma and Sketch. She uses Webflow
           to design dynamic websites for her clients, and InVision when there
@@ -209,7 +228,7 @@ const Contact = () => (
       height: 100%;
       width: 100%;
       display: flex;
-      background-color: #fff3e2;
+      background-color: white;
     `}
   >
     <Container
@@ -219,9 +238,19 @@ const Contact = () => (
       `}
     >
       <h1 className="headerText">Let's Chat!</h1>
-      <h3 className="description">
-        Passionate about making tech a more diverse and inclusive place?
-        <br /> Let's grab a (virtual) coffee!
+      <h3
+        css={css`
+          font-family: helvetica;
+          font-weight: 100;
+          color: #2d2d2d;
+          letter-spacing: 0.03em;
+          -webkit-font-smoothing: antialiased;
+          font-size: 1rem;
+          text-align: center;
+        `}
+      >
+        Interested in making tech a better place?
+        <br /> Let's grab a virtual coffee!
       </h3>
       <a
         href="mailto:katiefujihara@gmail.com"
@@ -270,6 +299,11 @@ export default function Index({ data: { site, allMdx } }) {
             key={post.id}
             css={css`
               margin-bottom: 40px;
+              background-color: #ffb3c8;
+              background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 1600 800'%3E%3Cg %3E%3Cpolygon fill='%23ffbccf' points='1600 160 0 460 0 350 1600 50'/%3E%3Cpolygon fill='%23ffc5d6' points='1600 260 0 560 0 450 1600 150'/%3E%3Cpolygon fill='%23ffcedd' points='1600 360 0 660 0 550 1600 250'/%3E%3Cpolygon fill='%23ffd7e4' points='1600 460 0 760 0 650 1600 350'/%3E%3Cpolygon fill='%23ffe0eb' points='1600 800 0 800 0 750 1600 450'/%3E%3C/g%3E%3C/svg%3E");
+              background-attachment: fixed;
+              background-size: cover;
+              padding: 20px;
             `}
           >
             <Link
