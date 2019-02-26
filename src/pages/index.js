@@ -7,10 +7,7 @@ import Link from '../components/Link'
 import Container from 'components/Container'
 import theme from '../../config/theme'
 import styles from '../styles/index.css'
-import '../styles/comments.css'
 import { rhythm } from '../lib/typography'
-import { DiscussionEmbed } from 'disqus-react'
-import Hugs from '../components/Hug'
 
 const Hero = () => (
   <section
