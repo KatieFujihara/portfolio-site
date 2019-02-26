@@ -7,7 +7,10 @@ import Link from '../components/Link'
 import Container from 'components/Container'
 import theme from '../../config/theme'
 import styles from '../styles/index.css'
+import '../styles/comments.css'
 import { rhythm } from '../lib/typography'
+import { DiscussionEmbed } from 'disqus-react'
+import Hugs from '../components/Hug'
 
 const Hero = () => (
   <section
@@ -221,47 +224,6 @@ const Tools = () => (
   </section>
 )
 
-const Contact = () => (
-  <section
-    css={css`
-      height: 100%;
-      width: 100%;
-      display: flex;
-      background-color: white;
-    `}
-  >
-    <Container
-      css={css`
-        display: flex;
-        flex-direction: column;
-      `}
-    >
-      <h1 className="headerText">Let's Chat!</h1>
-      <h3
-        css={css`
-          font-family: helvetica;
-          font-weight: 100;
-          color: #2d2d2d;
-          letter-spacing: 0.03em;
-          -webkit-font-smoothing: antialiased;
-          font-size: 1rem;
-          text-align: center;
-        `}
-      >
-        Interested in making tech a better place?
-        <br /> Let's grab a virtual coffee!
-      </h3>
-      <a
-        href="mailto:katiefujihara@gmail.com"
-        aria-label="contact"
-        className="contactButton"
-      >
-        Contact
-      </a>
-    </Container>
-  </section>
-)
-
 const PostTitle = styled.h2`
   margin-bottom: ${rhythm(0.3)};
   transition: ${theme.transition.ease};
@@ -286,7 +248,7 @@ export default function Index({ data: { site, allMdx } }) {
       <Hero />
       <Content />
       <Tools />
-      <Contact />
+      {/* <Hugs /> */}
       <hr />
       <Container
         css={css`

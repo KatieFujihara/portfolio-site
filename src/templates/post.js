@@ -11,7 +11,6 @@ import Share from '../components/Share'
 import config from '../../config/website'
 import { bpMaxSM } from '../lib/breakpoints'
 import Header from '../components/Header'
-import TalkyardCommentsIframe from '@debiki/gatsby-plugin-talkyard'
 
 export default function Post({
   data: { site, mdx },
@@ -41,7 +40,7 @@ export default function Post({
         <Container
           css={css`
             background: white;
-            margin: 10px;
+            margin: 10px auto;
             border-radius: 5px;
             h1 {
               color: #ffb3c8;
