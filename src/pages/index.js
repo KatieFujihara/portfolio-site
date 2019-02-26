@@ -37,10 +37,25 @@ const Hero = () => (
       >
         Katie Fujihara
       </h1>
-      <h2 className="secondaryText">
-        A UX Engineer based in Portland, OR who creates compelling websites with
-        a beautiful UI.
-      </h2>
+      <div className="rw-wrapper">
+        <h2 className="rw-sentence secondaryText">
+          <span>A</span>
+          <div className="rw-words rw-words-1">
+            <span>developer</span>
+            <span>designer</span>
+            <span>contributor</span>
+            <span>leader</span>
+          </div>
+          <span
+            css={css`
+              width: 150px;
+            `}
+          >
+            <br />
+            in Portland, OR who creates compelling websites with beautiful UI.
+          </span>
+        </h2>
+      </div>
       <Link
         to="/portfolio"
         aria-label="Visit Portfolio"
