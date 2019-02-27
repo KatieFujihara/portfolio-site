@@ -51,9 +51,10 @@ const Footer = ({ author, noSubscribeForm }) => (
           <a href="mailto:katiefujihara.com">
             <p>Email</p>
           </a>
-          <a href="https://www.twitter.com/katieofcode">
-            <p>Twitter</p>
+          <a href="https://twitter.com/katieofcode" rel="me">
+            Sign in to Twitter
           </a>
+
           <a href="https://www.github.com/katieofcode">
             <p>GitHub</p>
           </a>
