@@ -166,6 +166,7 @@ const Tools = () => (
           css={css`
             color: #750500;
             border: 2px solid #750500;
+            border-radius: 5px;
           `}
         >
           Developer Tools
@@ -198,6 +199,7 @@ const Tools = () => (
           css={css`
             color: #750500;
             border: 2px solid #750500;
+            border-radius: 5px;
           `}
         >
           Designer Tools
