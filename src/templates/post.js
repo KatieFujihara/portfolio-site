@@ -54,7 +54,7 @@ export default function Post({
               text-align: left;
             }
             a: hover {
-              color: #ffffff;
+              color: #ffb3c8;
             }
             padding: 30px;
             ${bpMaxSM} {
