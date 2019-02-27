@@ -42,10 +42,18 @@ module.exports = {
       },
     },
     {
-      resolve: `@debiki/gatsby-plugin-talkyard`,
+      resolve: `gatsby-plugin-webmention`,
       options: {
-        talkyardServerUrl:
-          'https://comments-for-www-katiefujihara-com.talkyard.net ',
+        username: 'www.katiefujihara.com', // webmention.io username
+        identity: {
+          github: 'katieofcode',
+          twitter: 'katieofcode', // no @
+        },
+        mentions: true,
+        pingbacks: false,
+        forwardPingbacksAsWebmentions: 'https://www.katiefujihara.com/endpoint',
+        domain: 'https://www.katiefujihara.com',
+        token: process.env.WEBMENTIONS_TOKEN,
       },
     },
     {

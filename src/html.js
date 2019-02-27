@@ -13,7 +13,6 @@ export default class HTML extends React.Component {
             content="width=device-width, initial-scale=1, shrink-to-fit=no"
           /> */}
           <meta name="viewport" content="width=800" />
-
           {this.props.headComponents}
         </head>
         <body {...this.props.bodyAttributes}>

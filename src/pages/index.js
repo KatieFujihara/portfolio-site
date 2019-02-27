@@ -165,7 +165,7 @@ const Tools = () => (
           className="headerText"
           css={css`
             color: #750500;
-            border: 2px solid #ffb3c8;
+            border: 2px solid #750500;
           `}
         >
           Developer Tools
@@ -197,7 +197,7 @@ const Tools = () => (
           className="headerText"
           css={css`
             color: #750500;
-            border: 2px solid #ffb3c8;
+            border: 2px solid #750500;
           `}
         >
           Designer Tools
