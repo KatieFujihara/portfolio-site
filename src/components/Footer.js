@@ -48,7 +48,7 @@ const Footer = ({ author, noSubscribeForm }) => (
         </div>
         <div className="footer">
           <h5>Connect</h5>
-          <a href="mailto:katiefujihara.com">
+          <a href="mailto:katiefujihara@gmail.com">
             <p>Email</p>
           </a>
           <a href="https://www.twitter.com/katieofcode">
