@@ -42,18 +42,15 @@ module.exports = {
       },
     },
     {
-      resolve: `gatsby-plugin-webmention`,
+      resolve: 'gatsby-source-airtable',
       options: {
-        username: 'www.katiefujihara.com', // webmention.io username
-        identity: {
-          github: 'katieofcode',
-          twitter: 'katieofcode', // no @
-        },
-        mentions: true,
-        pingbacks: false,
-        forwardPingbacksAsWebmentions: 'https://www.katiefujihara.com/endpoint',
-        domain: 'https://www.katiefujihara.com',
-        token: process.env.WEBMENTIONS_TOKEN,
+        apiKey: 'keyfRKLBf5rJPA03R',
+        tables: [
+          {
+            baseId: 'appxkzakrB2yolcCs',
+            tableName: 'Feedback'
+          }
+        ]
       },
     },
     {

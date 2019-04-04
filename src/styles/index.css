@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Abril+Fatface');
 
-.headerText {
+.header-text {
   font-family: 'Abril Fatface', cursive;
   font-weight: none;
   color: #ffaa33;
@@ -12,7 +12,7 @@
   text-shadow: 1px 3px 5px rgba(0, 0, 0, 0.4);
 }
 
-.secondaryText {
+.secondary-text {
   font-family: helvetica;
   font-weight: 100;
   color: rgba(245, 243, 247, 0.65);
@@ -33,7 +33,7 @@
   text-align: center;
 }
 
-.portfolioButton {
+.portfolio-button {
   background: linear-gradient(#ef8b00, #ffaa33);
   width: 150px;
   border: none;
@@ -49,12 +49,12 @@
   border-radius: 5px;
 }
 
-.portfolioButton:hover {
+.portfolio-button:hover {
   color: white;
   background: #fca4ba;
 }
 
-.blogButton {
+.blog-button {
   background: white;
   width: 150px;
   border: none;
@@ -69,12 +69,12 @@
   border-radius: 5px;
 }
 
-.blogButton:hover {
+.blog-button:hover {
   color: white;
   background: #fca4ba;
 }
 
-.githubButton {
+.standard-button {
   background: linear-gradient(#ef8b00, #ffaa33);
   width: 150px;
   height: auto;
@@ -89,29 +89,9 @@
   box-shadow: 8px 8px 0 rgba(232, 178, 102, 0.2);
 }
 
-.githubButton:hover {
+.standard-button:hover {
   background: #fca4ba;
   color: white;
-}
-
-.contactButton {
-  background: linear-gradient(#213a5a, #3b5575);
-  color: white;
-  width: 150px;
-  height: auto;
-  padding: 10px;
-  text-align: center;
-  text-decoration: none;
-  display: block;
-  margin: 0 auto;
-  cursor: pointer;
-  border-radius: 5px;
-  box-shadow: 8px 8px 0 rgba(232, 178, 102, 0.2);
-}
-
-.contactButton:hover {
-  color: white;
-  background: #fca4ba;
 }
 
 .logos {
