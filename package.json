@@ -3,7 +3,7 @@
   "description": "Katie's Personal Website",
   "version": "1.0.0",
   "author": "Katie Fujihara",
-  "repository": "https://github.com/katieofcode/katie-website",
+  "repository": "https://github.com/KatieFujihara/katie-website",
   "dependencies": {
     "@debiki/gatsby-plugin-talkyard": "^0.5.8",
     "@emotion/core": "^10.0.5",

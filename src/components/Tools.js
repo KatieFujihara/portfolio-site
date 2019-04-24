@@ -59,7 +59,7 @@ import { css } from '@emotion/core'
           alt="react logo"
         />
         <a
-          href="https://github.com/katieofcode"
+          href="https://github.com/KatieFujihara"
           aria-label="Visit blog page"
           className="standard-button"
         >

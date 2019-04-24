@@ -16,8 +16,8 @@ module.exports = {
   backgroundColor: '#2b2e3c',
 
   // Social component
-  twitter: 'https://twitter.com/katieofcode/',
-  twitterHandle: '@katieofcode',
-  github: 'https://github.com/katieofcode/',
+  twitter: 'https://twitter.com/KatieFujihara/',
+  twitterHandle: '@KatieFujihara',
+  github: 'https://github.com/KatieFujihara/',
   linkedin: '',
 }

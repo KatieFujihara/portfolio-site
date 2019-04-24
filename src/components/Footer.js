@@ -49,10 +49,10 @@ const Footer = () => (
           <a href="mailto:katiefujihara@gmail.com">
             <p>Email</p>
           </a>
-          <a href="https://www.twitter.com/katieofcode">
+          <a href="https://www.twitter.com/KatieFujihara">
             <p>Twitter</p>
           </a>
-          <a href="https://www.github.com/katieofcode">
+          <a href="https://www.github.com/KatieFujihara">
             <p>GitHub</p>
           </a>
         </div>
